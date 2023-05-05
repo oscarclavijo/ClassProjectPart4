@@ -38,6 +38,14 @@ public class ComparisonPredicate {
     this.leftHandSideAttrName = leftHandSideAttrName;
   }
 
+  public String getRightHandSideAttrName() {
+    return rightHandSideAttrName;
+  }
+
+  public void setRightHandSideAttrName(String rightHandSideAttrName) {
+    this.rightHandSideAttrName = rightHandSideAttrName;
+  }
+
   public AttributeType getLeftHandSideAttrType() {
     return leftHandSideAttrType;
   }
@@ -56,6 +64,9 @@ public class ComparisonPredicate {
 
   public Object getRightHandSideValue() {
     return rightHandSideValue;
+  }
+  public AlgebraicOperator getRightHandSideOperator() {
+    return rightHandSideOperator;
   }
 
   public void setRightHandSideValue(Object rightHandSideValue) {

@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
@@ -120,7 +121,7 @@ public class Part4Test {
   public void init(){
     tableManager = new TableManagerImpl();
     records = new RecordsImpl();
-    indexes = new IndexesImpl();
+    indexes = new IndexesImpl(records);
     relAlgOperators = new RelationalAlgebraOperatorsImpl();
   }
 
@@ -323,7 +324,7 @@ public class Part4Test {
       Record joinedRecord = getExpectedJoinedEmpDepRecord(employeeRecord, departmentRecord);
 
       expectedRecordSet.add(joinedRecord);
-    }
+     }
 
 
     Set<Record> actualRecordSet = new HashSet<>();
@@ -334,8 +335,7 @@ public class Part4Test {
       }
       actualRecordSet.add(record);
     }
-
-    assertEquals(expectedRecordSet, actualRecordSet);
+    assertEquals(expectedRecordSet, actualRecordSet);  
     joinResIterator.commit();
     System.out.println("Test3 passed!");
   }

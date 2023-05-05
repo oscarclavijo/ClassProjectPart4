@@ -1,5 +1,6 @@
 package CSCI485ClassProject;
 
+import CSCI485ClassProject.models.AssignmentExpression;
 import CSCI485ClassProject.models.Record;
 
 public abstract class Iterator {
@@ -24,4 +25,6 @@ public abstract class Iterator {
   public abstract void commit();
 
   public abstract void abort();
+
+  public abstract StatusCode update(AssignmentExpression assignExp); 
 }

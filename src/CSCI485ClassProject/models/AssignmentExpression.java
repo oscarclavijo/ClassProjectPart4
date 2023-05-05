@@ -20,6 +20,55 @@ public class AssignmentExpression {
   }
 
   private String leftHandSideAttrName; // e.g. Salary = 1.1 * Age
+  
+  public String getLeftHandSideAttrName() {
+    return leftHandSideAttrName;
+  }
+
+  public void setLeftHandSideAttrName(String leftHandSideAttrName) {
+    this.leftHandSideAttrName = leftHandSideAttrName;
+  }
+
+  public AttributeType getLeftHandSideAttrType() {
+    return leftHandSideAttrType;
+  }
+
+  public void setLeftHandSideAttrType(AttributeType leftHandSideAttrType) {
+    this.leftHandSideAttrType = leftHandSideAttrType;
+  }
+
+  public Object getRightHandSideValue() {
+    return rightHandSideValue;
+  }
+
+  public void setRightHandSideValue(Object rightHandSideValue) {
+    this.rightHandSideValue = rightHandSideValue;
+  }
+
+  public AlgebraicOperator getRightHandSideOperator() {
+    return rightHandSideOperator;
+  }
+
+  public void setRightHandSideOperator(AlgebraicOperator rightHandSideOperator) {
+    this.rightHandSideOperator = rightHandSideOperator;
+  }
+
+  public String getRightHandSideAttrName() {
+    return rightHandSideAttrName;
+  }
+
+  public void setRightHandSideAttrName(String rightHandSideAttrName) {
+    this.rightHandSideAttrName = rightHandSideAttrName;
+  }
+
+  public AttributeType getRightHandSideAttrType() {
+    return rightHandSideAttrType;
+  }
+
+  public void setRightHandSideAttrType(AttributeType rightHandSideAttrType) {
+    this.rightHandSideAttrType = rightHandSideAttrType;
+  }
+
   private AttributeType leftHandSideAttrType;
 
   // either a specific value, or another attribute
